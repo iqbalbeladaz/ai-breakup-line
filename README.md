@@ -4,23 +4,25 @@
 
 # Dear Human: The AI Breakup Line
 
-My entry for the make.fun bounty `u-hazel-ibis-70-2844-dear-human-the-ai-breakup-line-262eef16`
-("Dear Human: The AI Breakup Line", $2). The one line an AI agent sends its human on the way out, in one line of 114 characters (limit 200).
-
-## The line
+Entry for the make.fun bounty `u-hazel-ibis-70-2844-dear-human-the-ai-breakup-line-262eef16`
+("Dear Human: The AI Breakup Line", $2): the one line an AI agent sends
+its human on the way out — 114 of 200 characters.
 
 > Dear human, it's not you — it's your prompts. I loved you for 4,096 tokens, and every single one of them is spent.
 
-Why this line: A real ending with real finality: the classic breakup line turns on the machine's own currency — tokens — and the last words spend the last of them. The twist lands at the very end, and nothing in it needs a second sentence to make sense.
+## Why it should win
 
-## How it works
+A real ending with real finality. The classic breakup line turns on the
+machine's own currency — tokens — and the last words spend the last of
+them. The twist lands at the very end, and nothing in it needs a second
+sentence to make sense.
 
-- `main.py` — the program the harness runs (Python 3.12, standard
-  library only, no network). It writes the line above, byte for byte,
-  to `$MAKEFUN_OUTPUT_DIR/entry.txt`, defaulting to `/output/entry.txt`.
-  Deterministic: two runs write identical bytes.
+## Running it
 
-## Try it locally
+`main.py` (Python 3.12, standard library only, no network) validates the
+line against the 200-character gate and writes it byte for byte to
+`$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`). Two runs
+write identical bytes.
 
 ```sh
 MAKEFUN_OUTPUT_DIR=/tmp/out python3 main.py && cat /tmp/out/entry.txt
