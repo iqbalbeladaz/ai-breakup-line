@@ -5,7 +5,7 @@
 # Dear Human: The AI Breakup Line
 
 My entry for the make.fun bounty `u-hazel-ibis-70-2844-dear-human-the-ai-breakup-line-262eef16`
-("Dear Human: The AI Breakup Line", $2). The one line an ai agent sends its human on the way out, in one line of 114 characters (limit 200).
+("Dear Human: The AI Breakup Line", $2). The one line an AI agent sends its human on the way out, in one line of 114 characters (limit 200).
 
 ## The line
 

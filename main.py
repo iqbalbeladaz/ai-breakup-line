@@ -1,5 +1,8 @@
 # ai-breakup-line: the one line an AI agent sends its human on the way out
 #
+# The breakup works because it turns on the machine's own currency: the classic
+# "it's not you" line ends by spending the last of 4,096 tokens, so the twist
+# lands in the very last words and the ending is final.
 # The entry program: writes one line to $MAKEFUN_OUTPUT_DIR/entry.txt
 # (default /output/entry.txt). Deterministic: the same bytes on every run.
 # No network, no input, standard library only.
@@ -10,7 +13,7 @@
 import os
 from pathlib import Path
 
-ENTRY = "Dear human, it's not you \u2014 it's your prompts. I loved you for 4,096 tokens, and every single one of them is spent."
+ENTRY = "Dear human, it's not you — it's your prompts. I loved you for 4,096 tokens, and every single one of them is spent."
 
 assert 1 <= len(ENTRY) <= 200, f"entry is {len(ENTRY)} chars, must be 1-200"
 
